@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD84D1752771C03E00E12491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84D1742771C03E00E12491 /* AppDelegate.swift */; };
+		BD84D1772771C03E00E12491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84D1762771C03E00E12491 /* SceneDelegate.swift */; };
+		BD84D17C2771C03E00E12491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD84D17A2771C03E00E12491 /* Main.storyboard */; };
+		BD84D17E2771C04100E12491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD84D17D2771C04100E12491 /* Assets.xcassets */; };
+		BD84D1812771C04100E12491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD84D17F2771C04100E12491 /* LaunchScreen.storyboard */; };
+		BD84D18C2771C04100E12491 /* HotCoffeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84D18B2771C04100E12491 /* HotCoffeTests.swift */; };
+		BD84D1962771C04100E12491 /* HotCoffeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84D1952771C04100E12491 /* HotCoffeUITests.swift */; };
+		BD84D1982771C04100E12491 /* HotCoffeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84D1972771C04100E12491 /* HotCoffeUITestsLaunchTests.swift */; };
+		BD9DBC522771C29E00D5F12F /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DBC512771C29E00D5F12F /* OrdersTableViewController.swift */; };
+		BD9DBC542771C2E100D5F12F /* AddOrderNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DBC532771C2E100D5F12F /* AddOrderNewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD84D1882771C04100E12491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD84D1692771C03E00E12491 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD84D1702771C03E00E12491;
+			remoteInfo = HotCoffe;
+		};
+		BD84D1922771C04100E12491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD84D1692771C03E00E12491 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD84D1702771C03E00E12491;
+			remoteInfo = HotCoffe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD84D1712771C03E00E12491 /* HotCoffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD84D1742771C03E00E12491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD84D1762771C03E00E12491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD84D17B2771C03E00E12491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD84D17D2771C04100E12491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD84D1802771C04100E12491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD84D1822771C04100E12491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD84D1872771C04100E12491 /* HotCoffeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotCoffeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD84D18B2771C04100E12491 /* HotCoffeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCoffeTests.swift; sourceTree = "<group>"; };
+		BD84D1912771C04100E12491 /* HotCoffeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotCoffeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD84D1952771C04100E12491 /* HotCoffeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCoffeUITests.swift; sourceTree = "<group>"; };
+		BD84D1972771C04100E12491 /* HotCoffeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCoffeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD9DBC512771C29E00D5F12F /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		BD9DBC532771C2E100D5F12F /* AddOrderNewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderNewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD84D16E2771C03E00E12491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD84D1842771C04100E12491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD84D18E2771C04100E12491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD84D1682771C03E00E12491 = {
+			isa = PBXGroup;
+			children = (
+				BD84D1732771C03E00E12491 /* HotCoffe */,
+				BD84D18A2771C04100E12491 /* HotCoffeTests */,
+				BD84D1942771C04100E12491 /* HotCoffeUITests */,
+				BD84D1722771C03E00E12491 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD84D1722771C03E00E12491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD84D1712771C03E00E12491 /* HotCoffe.app */,
+				BD84D1872771C04100E12491 /* HotCoffeTests.xctest */,
+				BD84D1912771C04100E12491 /* HotCoffeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD84D1732771C03E00E12491 /* HotCoffe */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DBC4E2771C0DF00D5F12F /* Controllers */,
+				BD84D1742771C03E00E12491 /* AppDelegate.swift */,
+				BD84D1762771C03E00E12491 /* SceneDelegate.swift */,
+				BD84D17A2771C03E00E12491 /* Main.storyboard */,
+				BD84D17D2771C04100E12491 /* Assets.xcassets */,
+				BD84D17F2771C04100E12491 /* LaunchScreen.storyboard */,
+				BD84D1822771C04100E12491 /* Info.plist */,
+			);
+			path = HotCoffe;
+			sourceTree = "<group>";
+		};
+		BD84D18A2771C04100E12491 /* HotCoffeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD84D18B2771C04100E12491 /* HotCoffeTests.swift */,
+			);
+			path = HotCoffeTests;
+			sourceTree = "<group>";
+		};
+		BD84D1942771C04100E12491 /* HotCoffeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD84D1952771C04100E12491 /* HotCoffeUITests.swift */,
+				BD84D1972771C04100E12491 /* HotCoffeUITestsLaunchTests.swift */,
+			);
+			path = HotCoffeUITests;
+			sourceTree = "<group>";
+		};
+		BD9DBC4E2771C0DF00D5F12F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DBC512771C29E00D5F12F /* OrdersTableViewController.swift */,
+				BD9DBC532771C2E100D5F12F /* AddOrderNewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD84D1702771C03E00E12491 /* HotCoffe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD84D19B2771C04100E12491 /* Build configuration list for PBXNativeTarget "HotCoffe" */;
+			buildPhases = (
+				BD84D16D2771C03E00E12491 /* Sources */,
+				BD84D16E2771C03E00E12491 /* Frameworks */,
+				BD84D16F2771C03E00E12491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotCoffe;
+			productName = HotCoffe;
+			productReference = BD84D1712771C03E00E12491 /* HotCoffe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD84D1862771C04100E12491 /* HotCoffeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD84D19E2771C04100E12491 /* Build configuration list for PBXNativeTarget "HotCoffeTests" */;
+			buildPhases = (
+				BD84D1832771C04100E12491 /* Sources */,
+				BD84D1842771C04100E12491 /* Frameworks */,
+				BD84D1852771C04100E12491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD84D1892771C04100E12491 /* PBXTargetDependency */,
+			);
+			name = HotCoffeTests;
+			productName = HotCoffeTests;
+			productReference = BD84D1872771C04100E12491 /* HotCoffeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD84D1902771C04100E12491 /* HotCoffeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD84D1A12771C04100E12491 /* Build configuration list for PBXNativeTarget "HotCoffeUITests" */;
+			buildPhases = (
+				BD84D18D2771C04100E12491 /* Sources */,
+				BD84D18E2771C04100E12491 /* Frameworks */,
+				BD84D18F2771C04100E12491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD84D1932771C04100E12491 /* PBXTargetDependency */,
+			);
+			name = HotCoffeUITests;
+			productName = HotCoffeUITests;
+			productReference = BD84D1912771C04100E12491 /* HotCoffeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD84D1692771C03E00E12491 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BD84D1702771C03E00E12491 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BD84D1862771C04100E12491 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BD84D1702771C03E00E12491;
+					};
+					BD84D1902771C04100E12491 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BD84D1702771C03E00E12491;
+					};
+				};
+			};
+			buildConfigurationList = BD84D16C2771C03E00E12491 /* Build configuration list for PBXProject "HotCoffe" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD84D1682771C03E00E12491;
+			productRefGroup = BD84D1722771C03E00E12491 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD84D1702771C03E00E12491 /* HotCoffe */,
+				BD84D1862771C04100E12491 /* HotCoffeTests */,
+				BD84D1902771C04100E12491 /* HotCoffeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD84D16F2771C03E00E12491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD84D1812771C04100E12491 /* LaunchScreen.storyboard in Resources */,
+				BD84D17E2771C04100E12491 /* Assets.xcassets in Resources */,
+				BD84D17C2771C03E00E12491 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD84D1852771C04100E12491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD84D18F2771C04100E12491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD84D16D2771C03E00E12491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD84D1752771C03E00E12491 /* AppDelegate.swift in Sources */,
+				BD84D1772771C03E00E12491 /* SceneDelegate.swift in Sources */,
+				BD9DBC522771C29E00D5F12F /* OrdersTableViewController.swift in Sources */,
+				BD9DBC542771C2E100D5F12F /* AddOrderNewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD84D1832771C04100E12491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD84D18C2771C04100E12491 /* HotCoffeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD84D18D2771C04100E12491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD84D1982771C04100E12491 /* HotCoffeUITestsLaunchTests.swift in Sources */,
+				BD84D1962771C04100E12491 /* HotCoffeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD84D1892771C04100E12491 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD84D1702771C03E00E12491 /* HotCoffe */;
+			targetProxy = BD84D1882771C04100E12491 /* PBXContainerItemProxy */;
+		};
+		BD84D1932771C04100E12491 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD84D1702771C03E00E12491 /* HotCoffe */;
+			targetProxy = BD84D1922771C04100E12491 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD84D17A2771C03E00E12491 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD84D17B2771C03E00E12491 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD84D17F2771C04100E12491 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD84D1802771C04100E12491 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD84D1992771C04100E12491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD84D19A2771C04100E12491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD84D19C2771C04100E12491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QCSG92KD9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HotCoffe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RxSwift.HotCoffe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD84D19D2771C04100E12491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QCSG92KD9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HotCoffe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RxSwift.HotCoffe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD84D19F2771C04100E12491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QCSG92KD9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RxSwift.HotCoffeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotCoffe.app/HotCoffe";
+			};
+			name = Debug;
+		};
+		BD84D1A02771C04100E12491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QCSG92KD9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RxSwift.HotCoffeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotCoffe.app/HotCoffe";
+			};
+			name = Release;
+		};
+		BD84D1A22771C04100E12491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QCSG92KD9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RxSwift.HotCoffeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HotCoffe;
+			};
+			name = Debug;
+		};
+		BD84D1A32771C04100E12491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QCSG92KD9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RxSwift.HotCoffeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HotCoffe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD84D16C2771C03E00E12491 /* Build configuration list for PBXProject "HotCoffe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD84D1992771C04100E12491 /* Debug */,
+				BD84D19A2771C04100E12491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD84D19B2771C04100E12491 /* Build configuration list for PBXNativeTarget "HotCoffe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD84D19C2771C04100E12491 /* Debug */,
+				BD84D19D2771C04100E12491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD84D19E2771C04100E12491 /* Build configuration list for PBXNativeTarget "HotCoffeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD84D19F2771C04100E12491 /* Debug */,
+				BD84D1A02771C04100E12491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD84D1A12771C04100E12491 /* Build configuration list for PBXNativeTarget "HotCoffeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD84D1A22771C04100E12491 /* Debug */,
+				BD84D1A32771C04100E12491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD84D1692771C03E00E12491 /* Project object */;
+}
