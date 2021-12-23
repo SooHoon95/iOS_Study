@@ -17,6 +17,9 @@
 		BD84D1982771C04100E12491 /* HotCoffeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84D1972771C04100E12491 /* HotCoffeUITestsLaunchTests.swift */; };
 		BD9DBC522771C29E00D5F12F /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DBC512771C29E00D5F12F /* OrdersTableViewController.swift */; };
 		BD9DBC542771C2E100D5F12F /* AddOrderNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DBC532771C2E100D5F12F /* AddOrderNewController.swift */; };
+		BD9DBC5727742BCB00D5F12F /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DBC5627742BCB00D5F12F /* Webservice.swift */; };
+		BD9DBC5A27744D4B00D5F12F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DBC5927744D4B00D5F12F /* Order.swift */; };
+		BD9DBC5D27745E9D00D5F12F /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9DBC5C27745E9D00D5F12F /* OrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		BD84D1972771C04100E12491 /* HotCoffeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCoffeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD9DBC512771C29E00D5F12F /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		BD9DBC532771C2E100D5F12F /* AddOrderNewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderNewController.swift; sourceTree = "<group>"; };
+		BD9DBC5627742BCB00D5F12F /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Webservice.swift; path = ../../../../../../Documents/Webservice.swift; sourceTree = "<group>"; };
+		BD9DBC5927744D4B00D5F12F /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		BD9DBC5C27745E9D00D5F12F /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		BD84D1732771C03E00E12491 /* HotCoffe */ = {
 			isa = PBXGroup;
 			children = (
+				BD9DBC5B27745DE600D5F12F /* View Models */,
+				BD9DBC5827744D2900D5F12F /* Model */,
+				BD9DBC5527742BB700D5F12F /* Services */,
 				BD9DBC4E2771C0DF00D5F12F /* Controllers */,
 				BD84D1742771C03E00E12491 /* AppDelegate.swift */,
 				BD84D1762771C03E00E12491 /* SceneDelegate.swift */,
@@ -136,6 +145,30 @@
 				BD9DBC532771C2E100D5F12F /* AddOrderNewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BD9DBC5527742BB700D5F12F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DBC5627742BCB00D5F12F /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BD9DBC5827744D2900D5F12F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DBC5927744D4B00D5F12F /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD9DBC5B27745DE600D5F12F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD9DBC5C27745E9D00D5F12F /* OrderViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9DBC5A27744D4B00D5F12F /* Order.swift in Sources */,
 				BD84D1752771C03E00E12491 /* AppDelegate.swift in Sources */,
 				BD84D1772771C03E00E12491 /* SceneDelegate.swift in Sources */,
 				BD9DBC522771C29E00D5F12F /* OrdersTableViewController.swift in Sources */,
+				BD9DBC5727742BCB00D5F12F /* Webservice.swift in Sources */,
+				BD9DBC5D27745E9D00D5F12F /* OrderViewModel.swift in Sources */,
 				BD9DBC542771C2E100D5F12F /* AddOrderNewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

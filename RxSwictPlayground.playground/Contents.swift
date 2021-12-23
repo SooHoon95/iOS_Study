@@ -72,15 +72,18 @@ let bag = DisposeBag()
 
 
 // BehaviorRelay
+let testArray = ["No1", "No2", "No3"]
 
-let relay = BehaviorRelay(value: ["Item 1"])
+let relay = BehaviorRelay<Array>(value: [])
+
 
 
 var value = relay.value
 
-value.append("Item 2")
-value.append("Item 3")
-value.append("Item 4")
+value.append(testArray)
+//value.append("Item 2")
+//value.append("Item 3")
+//value.append("Item 4")
 
 relay.accept(value)
 
