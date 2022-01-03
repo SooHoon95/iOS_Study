@@ -29,20 +29,25 @@ struct OrderViewModel {
 
 // 익스텐션 꼭 안하고 위에다 써도 된다.
 extension OrderViewModel {
+//
+//    var Body: String? {
+//        return self.order.Body
+//    }
     
     var name: String {
         return self.order.name
     }
-    
-    var email: String {
-        return self.order.email
+
+    var coffeeName: String {
+        return self.order.coffeeName.rawValue.capitalized
     }
-    
-    var type: String {
-        return self.order.type.rawValue.capitalized
+
+    var total: Double {
+        return self.order.total
     }
-    
+
     var size: String {
         return self.order.size.rawValue.capitalized
+        
     }
 }

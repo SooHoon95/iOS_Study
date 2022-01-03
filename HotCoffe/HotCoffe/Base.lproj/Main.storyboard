@@ -17,19 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mtB-tP-X5R">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="WW7-ld-T91" detailTextLabel="GPJ-Qp-BE5" style="IBUITableViewCellStyleValue1" id="mtB-tP-X5R">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mtB-tP-X5R" id="kzi-Ra-6Ol">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="myCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mtB-tP-X5R" id="kzi-Ra-6Ol">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WW7-ld-T91">
+                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GPJ-Qp-BE5">
+                                            <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="b0a-C9-hCn" id="yWt-1h-hni"/>
-                            <outlet property="delegate" destination="b0a-C9-hCn" id="N80-vM-H6F"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Orders" id="cAG-YP-tUo">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="dw3-ec-Nfy">
@@ -41,7 +53,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWf-iM-8cB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571.01449275362324" y="165.40178571428569"/>
+            <point key="canvasLocation" x="571.01449275362324" y="164.73214285714286"/>
         </scene>
         <!--Add New Orders-->
         <scene sceneID="qid-tZ-XvK">
@@ -55,7 +67,7 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="421"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Sxg-r8-qJg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoffeeNameTableViewCell" id="Sxg-r8-qJg">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sxg-r8-qJg" id="lPn-aI-aBw">
@@ -65,16 +77,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g7p-pj-wxi">
-                                <rect key="frame" x="104" y="510" width="206" height="32"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jli-J2-olf">
-                                <rect key="frame" x="107" y="605" width="200" height="34"/>
+                                <rect key="frame" x="107" y="639" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Js9-xE-yDk"/>
                                 </constraints>
@@ -82,7 +86,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cO9-mB-BVL">
-                                <rect key="frame" x="107" y="647" width="200" height="34"/>
+                                <rect key="frame" x="107" y="681" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="izH-5V-mpQ"/>
                                 </constraints>
@@ -99,16 +103,27 @@
                             <constraint firstItem="VLe-TC-ptL" firstAttribute="height" secondItem="sD5-kZ-8Yf" secondAttribute="height" multiplier="0.5" id="IRF-Rb-ACv"/>
                             <constraint firstItem="VLe-TC-ptL" firstAttribute="top" secondItem="hyQ-BA-NkS" secondAttribute="top" id="PUJ-ZW-U8b"/>
                             <constraint firstItem="cO9-mB-BVL" firstAttribute="top" secondItem="Jli-J2-olf" secondAttribute="bottom" constant="8" symbolic="YES" id="Soh-ra-s9z"/>
+                            <constraint firstItem="hyQ-BA-NkS" firstAttribute="bottom" secondItem="cO9-mB-BVL" secondAttribute="bottom" constant="127" id="UTb-Zb-KNL"/>
                             <constraint firstItem="VLe-TC-ptL" firstAttribute="leading" secondItem="hyQ-BA-NkS" secondAttribute="leading" id="UlT-Bz-BAS"/>
-                            <constraint firstItem="g7p-pj-wxi" firstAttribute="centerX" secondItem="sD5-kZ-8Yf" secondAttribute="centerX" id="bKJ-PJ-zke"/>
-                            <constraint firstItem="g7p-pj-wxi" firstAttribute="top" secondItem="VLe-TC-ptL" secondAttribute="bottom" constant="33" id="iQq-Im-3EC"/>
-                            <constraint firstItem="Jli-J2-olf" firstAttribute="top" secondItem="g7p-pj-wxi" secondAttribute="bottom" constant="64" id="stK-Dm-9pI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Orders" id="aOz-sM-Il1">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="rK3-TF-HRh"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="OpQ-ry-bk1"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="rK3-TF-HRh">
+                            <connections>
+                                <action selector="close" destination="9IF-vY-JFM" id="QbN-iR-yMt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="OpQ-ry-bk1">
+                            <connections>
+                                <action selector="save" destination="9IF-vY-JFM" id="ipf-BV-z7V"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextFile" destination="cO9-mB-BVL" id="6cI-SM-PT7"/>
+                        <outlet property="nameTextField" destination="Jli-J2-olf" id="dem-Ob-S5A"/>
+                        <outlet property="tableView" destination="VLe-TC-ptL" id="qhu-8s-wQ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct9-4I-lKU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
