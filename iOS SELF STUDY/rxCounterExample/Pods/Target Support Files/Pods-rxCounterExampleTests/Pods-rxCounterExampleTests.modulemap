@@ -1,0 +1,6 @@
+framework module Pods_rxCounterExampleTests {
+  umbrella header "Pods-rxCounterExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

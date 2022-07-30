@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-rxCounterExample-rxCounterExampleUITests/Pods-rxCounterExample-rxCounterExampleUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxAppState/RxAppState.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
