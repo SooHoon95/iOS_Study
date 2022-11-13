@@ -9,6 +9,7 @@ import UIKit
 
 class SeguePresentViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

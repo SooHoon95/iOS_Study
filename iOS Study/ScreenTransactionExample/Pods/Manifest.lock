@@ -1,0 +1,16 @@
+PODS:
+  - SemiModalViewController (1.0.1)
+
+DEPENDENCIES:
+  - SemiModalViewController
+
+SPEC REPOS:
+  trunk:
+    - SemiModalViewController
+
+SPEC CHECKSUMS:
+  SemiModalViewController: 13fe8b991b501c7cd6a9ec7c782ed7a5c72c12e6
+
+PODFILE CHECKSUM: bdaec23f73a0d32469af1b2365608355c3e175bb
+
+COCOAPODS: 1.11.3
