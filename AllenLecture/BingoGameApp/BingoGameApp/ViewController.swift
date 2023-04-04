@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     var comNum: Int = Int.random(in: 1...10)
     // 초기화 0 이면 숫자 안누르고 버튼 누르면 에러가능성
-    var myNum: Int = 1
+//    var myNum: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,18 +32,19 @@ class ViewController: UIViewController {
         // numberLabel이 숫자에 따라 변하기
         numberLabel.text = numberString
         
-        // 선택한 숫자를 변수에 저장
-        guard let num = Int(numberString) else { return }
-        myNum = num
-        
+        // 선택한 숫자를 변수에 저장하고 있지 않기
     }
     
     @IBAction func selectBtnTapped(_ sender: UIButton) {
-        // comNum vs myNum -> up? down? -> mainLabel
         
-        if comNum > myNum {
+        // 전역변수 없이 label 텍스트로 비교하기
+        guard let myNumString = numberLabel.text else { return }  // 숫자레이블의 문자열 가져오기(옵셔널벗기기)
+        guard let myNumber = Int(myNumString) else { return }  // 문자열 -> 정수로 타입변환
+        
+        
+        if comNum > myNumber {
             mainLabel.text = "Up"
-        } else if comNum < myNum {
+        } else if comNum < myNumber {
             mainLabel.text = "Down"
         } else {
             mainLabel.text = "Bingo 😎"
