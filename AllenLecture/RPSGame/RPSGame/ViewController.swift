@@ -42,8 +42,8 @@ class ViewController: UIViewController {
 
 
     @IBAction func rpsButtonTapped(_ sender: UIButton) {
-        // 가위 바위 보 선택해서 그 정보 저장
         
+        // 가위 바위 보 선택해서 그 정보 저장
         guard let title = sender.currentTitle else { return }
         
         switch title {
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         case "보":
             myChoice = Rps.paper
         default:
-            // 문자열 이기 때문에 디폴트를 작성해야한다.
+            // 문자열이기 때문에 디폴트를 작성해야한다.
             break
         }
     }
