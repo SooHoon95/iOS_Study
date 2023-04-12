@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var weightTF: UITextField!
     @IBOutlet weak var calculateButton: UIButton!
     
-    var bmi: Double?
+    
+    // MARK: - Model
+    var bmiManager = BMICalculateManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +41,8 @@ class ViewController: UIViewController {
         
         guard let height = heightTF.text else { return }
         guard let weight = weightTF.text else { return }
-        bmi = calculateBMI(height: height, weight: weight)
+        
+        bmiManager.calculateBMI(height: height, weight: weight)
         
     }
     
@@ -61,61 +64,16 @@ class ViewController: UIViewController {
         //데이터전달
         if segue.identifier == "toSecondVC" {
             let secondVC = segue.destination as! SecondViewController
-            secondVC.bmiResult = self.bmi
-            secondVC.bmiColor = getBackgroundColor()
-            secondVC.adviceString = getBMIAdviceString()
+            secondVC.bmiResult = bmiManager.getBMIResult()
+            secondVC.bmiColor = bmiManager.getBackgroundColor()
+            secondVC.adviceString = bmiManager.getBMIAdviceString()
         }
         
         heightTF.text = ""
         weightTF.text = ""
     }
     
-    func calculateBMI(height: String, weight: String) -> Double {
-        guard
-            let h = Double(height),
-            let w = Double(weight) else { return 0.0 }
-        var bmi = w / (h * h) * 10000
-        bmi = round(bmi * 10) / 10
-//        print("BMI Result: \(bmi)")
-        return bmi
-    }
-    
-    func getBackgroundColor() -> UIColor {
-        guard let bmi = bmi else { return UIColor.black }
-        switch bmi {
-        case ..<18.6:
-            return UIColor(displayP3Red: 22/255, green: 231/255, blue: 207/255, alpha: 1)
-        case 18.6..<23.0:
-            return UIColor(displayP3Red: 212/255, green: 251/255, blue: 121/255, alpha: 1)
-        case 23.0..<25.0:
-            return UIColor(displayP3Red: 218/255, green: 127/255, blue: 163/255, alpha: 1)
-        case 25.0..<30.0:
-            return UIColor(displayP3Red: 255/255, green: 150/255, blue: 141/255, alpha: 1)
-        case 30.0...:
-            return UIColor(displayP3Red: 255/255, green: 100/255, blue: 78/255, alpha: 1)
-        default:
-            return UIColor.black
-        }
-    }
-    
-    func getBMIAdviceString() -> String {
-        guard let bmi = bmi else { return "" }
-        switch bmi {
-        case ..<18.6:
-            return "저체중"
-        case 18.6..<23.0:
-            return "표준"
-        case 23.0..<25.0:
-            return "과체중"
-        case 25.0..<30.0:
-            return "중도비만"
-        case 30.0...:
-            return "고도비만"
-        default:
-            return ""
-        }
-    }
-    
+  
 }
 
 extension ViewController: UITextFieldDelegate {
