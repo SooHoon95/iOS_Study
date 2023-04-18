@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
+
         // BMI 결과값
         
         guard let height = heightTF.text else { return }
