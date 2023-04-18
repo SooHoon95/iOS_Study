@@ -10,7 +10,7 @@ import UIKit
 class FirstViewController: UIViewController {
 
     // 로그인 여부에 관련된 참/거짓 저장하는 속성
-    var isLoggedIn = false
+    var isLoggedIn = true
     
     //var navigationController: UINavigationController?
     
@@ -50,7 +50,7 @@ class FirstViewController: UIViewController {
         // (네비게이션바 설정관련) iOS버전 업데이트 되면서 바뀐 설정⭐️⭐️⭐️
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()  // 불투명으로
-        //appearance.backgroundColor = .brown     // 색상설정
+//        appearance.backgroundColor = .brown     // 색상설정
         
         //appearance.configureWithTransparentBackground()  // 투명으로
         
@@ -60,7 +60,10 @@ class FirstViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         
         title = "Main"
-        
+
+        let vc = LoginViewController()
+        self.navigationController?.pushViewController(vc, animated: false)
+        self.navigationController?.popViewController(animated: true)
     }
     
     

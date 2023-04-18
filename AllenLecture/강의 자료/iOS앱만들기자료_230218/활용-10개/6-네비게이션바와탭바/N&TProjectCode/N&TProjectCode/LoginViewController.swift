@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
         vc5.title = "Me"
         
         // 탭바로 사용하기 위한 뷰 컨트롤러들 설정
-        tabBarVC.setViewControllers([vc1, vc2, vc3, vc4, vc5], animated: false)
+        tabBarVC.setViewControllers([vc1, vc2, vc3, vc4, vc5], animated: true)
         tabBarVC.modalPresentationStyle = .fullScreen
         tabBarVC.tabBar.backgroundColor = .white
         
