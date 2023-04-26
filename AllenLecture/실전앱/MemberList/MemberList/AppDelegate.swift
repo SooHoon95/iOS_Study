@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  TableView&Nav
+//  MemberList
 //
-//  Created by 최수훈 on 2023/04/18.
+//  Created by 최수훈 on 2023/04/26.
 //
 
 import UIKit
