@@ -21,12 +21,23 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.rowHeight = 120   // 셀 하나하나의 높이
         tableView.delegate = self
+        
+//        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "영화목록"
 
         movieDataManager.makeMovieData()
 //        moviesArray = movieDataManager.getMovieData()
         
     }
-
+    
+    
+    
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        movieDataManager.updateMovieData()
+        
+        tableView.reloadData()
+    }
+    
 
 }
 
