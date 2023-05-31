@@ -29,8 +29,8 @@ struct Member {
     // 생성자
     init(name: String?, age: Int?, phone: String?, address: String?) {
         
-        // 0 인지 확인하고 타입저작속성의 절재 값으로 세팅(자동순번)
-        self.memberId = Member.memberNumbers == 0 ? 0 : Member.memberNumbers
+        // 0 인지 확인하고 타입저작속성의 절대 값으로 세팅(자동순번)
+        self.memberId = Member.memberNumbers
         
         // 나머지는 저장속성은 외부에서 셋팅
         self.name = name
@@ -38,6 +38,8 @@ struct Member {
         self.phone = phone
         self.address = address
         
+        print(Member.memberNumbers)
         Member.memberNumbers += 1
+        
     }
 }

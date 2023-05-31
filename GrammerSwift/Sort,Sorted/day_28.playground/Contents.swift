@@ -12,5 +12,8 @@ myArray.sort()
 
 // 내림차순 정렬 : 큰순서 -> 낮은 순서
 var descendingArray = myArray.sorted(by: >)
-
+print(myArray)
+print(descendingArray)
 myArray.sort(by: >)
+
+print(myArray)
