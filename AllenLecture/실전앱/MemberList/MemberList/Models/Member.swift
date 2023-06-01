@@ -7,6 +7,15 @@
 
 import UIKit
 
+// MARK: - custom Delegate
+
+protocol MemberDelegate: AnyObject {
+    // 이 delegate가 할 일 정의 1,2
+    func addNewMember(_ member: Member)
+    func update(index: Int, _ member: Member) // 순서가 반드시 필요. 위치 알아야하니까
+}
+
+
 struct Member {
     
     

@@ -12,6 +12,8 @@ final class DetailViewController: UIViewController {
 
     private let detailView = DetailView()
     
+   weak var delegate: MemberDelegate?
+    
     // 전화면에서 Member데이터를 전달 받기 위한 변수
     var member: Member?
     
@@ -71,20 +73,19 @@ final class DetailViewController: UIViewController {
             let phoneNumber = detailView.phoneNumberTextField.text ?? ""
             let address = detailView.addressTextField.text ?? ""
             
-            
             // 새로운 멤버(구조체) 생성
             var newMember = Member(name: name, age: age, phone: phoneNumber, address: address)
             newMember.memberImages = detailView.mainImageView.image
             
-            // 1) 델리게이트 방식이 아닌 구현⭐️
-            let index = navigationController!.viewControllers.count - 2
-            // 전 화면에 접근하기 위함
-            let vc = navigationController?.viewControllers[index] as! ViewController
-            // 전 화면의 모델에 접근해서 멤버를 추가
-            vc.memberListManager.makeNewMember(newMember)
+//            // 1) 델리게이트 방식이 아닌 구현⭐️
+//            let index = navigationController!.viewControllers.count - 2
+//            // 전 화면에 접근하기 위함
+//            let vc = navigationController?.viewControllers[index] as! ViewController
+//            // 전 화면의 모델에 접근해서 멤버를 추가
+//            vc.memberListManager.makeNewMember(newMember)
             
             // 2) 델리게이트 방식으로 구현⭐️
-            //delegate?.addNewMember(newMember)
+            delegate?.addNewMember(newMember)
             
         // [2] 멤버가 있다면 (멤버의 내용을 업데이트 하기 위한 설정)
         } else {
@@ -102,16 +103,16 @@ final class DetailViewController: UIViewController {
             detailView.member = member
             
             // 1) 델리게이트 방식이 아닌 구현⭐️
-            let index = navigationController!.viewControllers.count - 2
+//            let index = navigationController!.viewControllers.count - 2
             // 전 화면에 접근하기 위함
             // .viewController = [UIViewController]
-            let vc = navigationController?.viewControllers[index] as! ViewController
+//            let vc = navigationController?.viewControllers[index] as! ViewController
             // 전 화면의 모델에 접근해서 멤버를 업데이트
-            vc.memberListManager.updateMemberInfo(index: memberId, member!)
+//            vc.memberListManager.updateMemberInfo(index: memberId, member!)
             
             
             // 델리게이트 방식으로 구현⭐️
-            //delegate?.update(index: memberId, member!)
+            delegate?.update(index: memberId, member!)
             
         }
         // (일처리를 다한 후에) 전화면으로 돌아가기
@@ -128,7 +129,7 @@ final class DetailViewController: UIViewController {
 extension DetailViewController: PHPickerViewControllerDelegate {
     
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-        // 피커뷰 dismiss
+    // 피커뷰 dismiss
         picker.dismiss(animated: true)
         
         let itemProvider = results.first?.itemProvider

@@ -29,14 +29,14 @@ class DetailView: UIView {
             phoneNumberTextField.text = member.phone
             addressTextField.text = member.address
             
-//            // 나이항목 (옵셔널 정수형)
-//            guard let age = member.age else {
-//                // 나이 항목이 없으면 빈문자열로 표시
-//                ageTextField.text = ""
-//                return
-//            }
-//            // 나이 항목이 있으면 정수 ==> 문자열 변환 표기
-//            ageTextField.text = "\(age)"
+            //            // 나이항목 (옵셔널 정수형)
+            //            guard let age = member.age else {
+            //                // 나이 항목이 없으면 빈문자열로 표시
+            //                ageTextField.text = ""
+            //                return
+            //            }
+            //            // 나이 항목이 있으면 정수 ==> 문자열 변환 표기
+            //            ageTextField.text = "\(age)"
             
             // 나이항목의 구현
             ageTextField.text = member.age != nil ? "\(member.age!)" : ""
@@ -238,14 +238,17 @@ class DetailView: UIView {
     let labelWidth: CGFloat = 70
     // 애니메이션을 위한 속성 선언
     var stackViewTopConstraint: NSLayoutConstraint!
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         self.backgroundColor = .white
-        setupMemerIdTextField()
+        
         setupStackView()
-//        setConstraints()
+        setupMemerIdTextField()
+        setupNotification()
+        
+        //        setConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -257,8 +260,20 @@ class DetailView: UIView {
         setConstraints()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.endEditing(true)
+    }
+    
     func setupStackView() {
         self.addSubview(stackView)
+    }
+    
+    // MARK: - 키보드 노티를 위한 노티피케이션 설정
+    func setupNotification() {
+        // observer : 관찰할 객체는 무엇인가?, name : UIResponder객체에서 다양한 노티중 선택, object : 추가적 정보전달을위한 객체같은것
+        NotificationCenter.default.addObserver(self, selector: #selector(moveUpAction), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(moveDownAction), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     // MARK: - 텍스트필드 델리게이트 설정 // init 생성자에서 선언해줘야한다
@@ -267,7 +282,7 @@ class DetailView: UIView {
         
         memberIdTextField.delegate = self
     }
-
+    
     
     
     func setConstraints() {
@@ -300,6 +315,30 @@ class DetailView: UIView {
             stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
         ])
     }
+
+    // MARK: - 키보드 올라올 시 화면 오토레이아웃 조정
+    
+    @objc func moveUpAction() {
+        stackViewTopConstraint.constant = -20
+        UIView.animate(withDuration: 0.2) {
+            self.layoutIfNeeded()
+        }
+    }
+    
+    @objc func moveDownAction() {
+        stackViewTopConstraint.constant = 20
+        UIView.animate(withDuration: 0.2) {
+            self.layoutIfNeeded()
+        }
+    }
+
+    // obsever해제를 위한 deinit
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    
 }
 
 // MARK: - 멤버번호 변경할 수 없도록

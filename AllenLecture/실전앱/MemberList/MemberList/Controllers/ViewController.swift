@@ -30,11 +30,11 @@ final  class ViewController: UIViewController {
         setupTableViewConstraints()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        tableView.reloadData()
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        
+//        tableView.reloadData()
+//    }
     
     func setupNaviBar() {
         title = "회원 목록"
@@ -81,7 +81,7 @@ final  class ViewController: UIViewController {
         let detailVC = DetailViewController()
         
         // 다음 화면의 대리자 설정 (다음 화면의 대리자는 지금 현재의 뷰컨트롤러)
-        //detailVC.delegate = self
+        detailVC.delegate = self
         
         // 화면이동
         navigationController?.pushViewController(detailVC, animated: true)
@@ -118,6 +118,10 @@ extension ViewController: UITableViewDelegate {
         // DetailView 로 넘어가기
         let detailVC = DetailViewController()
         
+        // MARK: - 커스텀 델리게이트
+        // 디테일뷰의 delegate를 여기서 받는다라고 설정한다
+        detailVC.delegate = self
+        
         let array = memberListManager.getMemberList()
         detailVC.member = array[indexPath.row]
 
@@ -125,4 +129,22 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
- 
+// MARK: - 커스텀 델리게이트 프로토콜 확장
+extension ViewController: MemberDelegate {
+    
+    func addNewMember(_ member: Member) {
+        // addMember 라고 model에 알려줘야함
+        print("here")
+        memberListManager.makeNewMember(member)
+        tableView.reloadData()
+    }
+    
+    func update(index: Int, _ member: Member) {
+        print("updateHere")
+        memberListManager.updateMemberInfo(index: index, member)
+        
+        tableView.reloadData()
+    }
+    
+    
+}
