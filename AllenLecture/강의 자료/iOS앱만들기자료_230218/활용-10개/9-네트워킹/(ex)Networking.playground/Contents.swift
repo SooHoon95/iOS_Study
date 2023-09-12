@@ -44,8 +44,7 @@ func getMethod() {
         }
 
         // 원하는 모델이 있다면, JSONDecoder로 decode코드로 구현 ⭐️
-        print(String(decoding: safeData, as: UTF8.self))
-
+        print(String(decoding: safeData, as: UTF8.self)) 
 
     }.resume()     // 시작
 }

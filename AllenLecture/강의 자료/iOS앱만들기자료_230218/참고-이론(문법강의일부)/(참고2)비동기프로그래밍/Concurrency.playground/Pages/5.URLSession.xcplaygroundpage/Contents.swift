@@ -34,7 +34,7 @@ let task = session.dataTask(with: url) { (data, response, error) in
 }
 
 // 4.작업시작
-task.resume()   // 일시정지된 상태로 작업이 시작하기 때문
+//task.resume()   // 일시정지된 상태로 작업이 시작하기 때문
 
 
 

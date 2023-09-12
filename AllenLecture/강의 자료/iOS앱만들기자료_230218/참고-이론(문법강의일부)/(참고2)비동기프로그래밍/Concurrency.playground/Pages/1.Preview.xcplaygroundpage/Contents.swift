@@ -35,13 +35,13 @@ func task5() {
     print("Task 5 완료★")
 }
 
-
-task1()
-task2()
-task3()
-task4()
-task5()
-
+//
+//task1()
+//task2()
+//task3()
+//task4()
+//task5()
+//
 
 
 
@@ -84,11 +84,11 @@ func task10() {
 
 // 비동기처리를 하지 않으면 10초이상이 걸림
 
-task6()
-task7()
-task8()
-task9()
-task10()
+//task6()
+//task7()
+//task8()
+//task9()
+//task10()
 
 
 

@@ -86,6 +86,7 @@ func getMethod(completion: @escaping ([Music]?) -> Void) {
 getMethod { musicArray in
     guard let array = musicArray else { return }
     dump(array)
+    
 }
 
 

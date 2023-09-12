@@ -1,4 +1,4 @@
-import UIKit
+ import UIKit
 
 //:> 생각나지않으면, 필요할때 찾아쓰면 됨 (외우는 것 절대 아님)
 
@@ -21,10 +21,10 @@ let formatter = DateFormatter()
 ============================================**/
 
 // 나라 / 지역마다 날짜와 시간을 표시하는 형식과 언어가 다름
-//formatter.locale = Locale(identifier: "ko_KR")
+formatter.locale = Locale(identifier: "ko_KR")
 // "2021년 5월 8일 토요일 오후 11시 44분 24초 대한민국 표준시"
 
-formatter.locale = Locale(identifier: "en_US")
+//formatter.locale = Locale(identifier: "en_US")
 // "Saturday, May 8, 2021 at 11:45:51 PM Korean Standard Time"
 
 
@@ -154,11 +154,11 @@ struct InstagramPost {
             //formatter.locale = Locale(identifier: Locale.autoupdatingCurrent.identifier)
             
             // 애플이 만들어 놓은
-            formatter.dateStyle = .medium
+//            formatter.dateStyle = .medium
             formatter.timeStyle = .full
             
             // 개발자가 직접 설정한
-            //formatter.dateFormat = "yyyy/MM/dd"
+//            formatter.dateFormat = "yyyy/MM/dd"
             
             return formatter.string(from: date)
         }
@@ -170,7 +170,10 @@ struct InstagramPost {
 let post1 = InstagramPost()
 print(post1.dateString)
 
+sleep(3)
 
+let post2 = InstagramPost()
+print(post2.dateString)
 
 
 

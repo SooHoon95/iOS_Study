@@ -20,7 +20,7 @@ func longtimePrint(name: String) -> String {
 }
 
 
-longtimePrint(name: "잡스")
+//longtimePrint(name: "잡스")
 
 
 

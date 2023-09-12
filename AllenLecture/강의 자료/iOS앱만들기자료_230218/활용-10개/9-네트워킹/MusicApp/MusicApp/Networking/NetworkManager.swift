@@ -21,6 +21,7 @@ final class NetworkManager {
     
     // 여러화면에서 통신을 한다면, 일반적으로 싱글톤으로 만듦
     static let shared = NetworkManager()
+    
     // 여러객체를 추가적으로 생성하지 못하도록 설정
     private init() {}
     

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     func doSomething() {
         DispatchQueue.global().async {
             sleep(3)
+            // 강한 참조
             print("글로벌큐에서 출력하기: \(self.name)")
         }
     }
@@ -54,7 +55,7 @@ class ViewController1: UIViewController {
         // 강한 참조 사이클이 일어나지 않지만, 굳이 뷰컨트롤러를 길게 잡아둘 필요가 없다면
         // weak self로 선언
         DispatchQueue.global().async { [weak self] in
-            guard let `self` = self else { return }
+            guard let self = self else { return }
             sleep(3)
             print("글로벌큐에서 출력하기: \(self.name)")
         }

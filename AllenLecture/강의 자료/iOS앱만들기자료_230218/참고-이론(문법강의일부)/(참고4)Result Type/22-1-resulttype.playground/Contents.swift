@@ -81,7 +81,8 @@ do {
 func resultTypeCheckingHeight(height: Int) -> Result<Bool, HeightError> {
     
     if height > 190 {
-        return Result.failure(HeightError.maxHeight)
+//        return Result.failure(HeightError.maxHeight)
+        return .failure(HeightError.maxHeight)
     } else if height < 130 {
         return Result.failure(HeightError.minHeight)
     } else {
@@ -96,18 +97,16 @@ func resultTypeCheckingHeight(height: Int) -> Result<Bool, HeightError> {
 
 
 // 리턴값을 받아서
-let result = resultTypeCheckingHeight(height: 200)
+let result = resultTypeCheckingHeight(height: 150)
 
 
 // 처리
 switch result {
 case .success(let data):
-    print("결과값은 \(data)입니다.")
+    print("결과값은 \(msg!)입니다.")
 case .failure(let error):
     print(error)
 }
-
-
 
 
 /*:

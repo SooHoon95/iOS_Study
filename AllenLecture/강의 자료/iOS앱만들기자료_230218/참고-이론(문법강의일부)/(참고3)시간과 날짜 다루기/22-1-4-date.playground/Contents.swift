@@ -7,7 +7,7 @@ import UIKit
 ---
 */
 var components = DateComponents()    // 구조체 (날짜/시간의 요소들을 다룰 수 있는)
-components.year = 2021
+components.year = 2023
 components.month = 1
 components.day = 1
 
@@ -17,7 +17,7 @@ components.second = 0
 
 
 let specifiedDate: Date = Calendar.current.date(from: components)!
-print(specifiedDate)
+//print(specifiedDate)
 
 
 
@@ -44,9 +44,8 @@ extension Date {
 }
 
 
-
-
 let someDate = Date(y: 2021, m: 1, d: 1)      // 특정날짜(시점) 객체 생성
+
 let someDate2 = Date(y: 2021, m: 7, d: 10)
 
 

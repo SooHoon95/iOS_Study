@@ -32,7 +32,7 @@ func getImages(with urlString: String) -> (UIImage?) {
 
 
 
-//getImages(with: "https://bit.ly/32ps0DI")    // 무조건 nil로 리턴함 ⭐️
+getImages(with: "https://bit.ly/32ps0DI")    // 무조건 nil로 리턴함 ⭐️
 
 
 
@@ -66,6 +66,7 @@ func properlyGetImages(with urlString: String, completionHandler: @escaping (UII
 
 
 
+//properlyGetImages(with: <#T##String#>, completionHandler: <#T##(UIImage?) -> Void#>)
 // 올바르게 설계한 함수 실행
 properlyGetImages(with: "https://bit.ly/32ps0DI") { (image) in
     
